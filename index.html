@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header Section -->
+        <header class="chat-header">
+            <div class="chat-title">Chat Application</div>
+            <div class="chat-user">
+                <img src="avatar.png" alt="User Avatar" class="avatar">
+                <span class="status online"></span>
+            </div>
+        </header>
+
+        <!-- Chat Window -->
+        <main class="chat-window" id="chat-window">
+            <!-- Message Bubbles -->
+            <div class="message received">
+                <img src="avatar.png" alt="User Avatar" class="avatar">
+                <div class="message-content">
+                    <p>Hello! How are you?</p>
+                    <span class="timestamp">10:30 AM</span>
+                </div>
+            </div>
+
+            <div class="message sent">
+                <div class="message-content">
+                    <p>I'm good, thanks! How about you?</p>
+                    <span class="timestamp">10:31 AM</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Input Section -->
+        <footer class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </footer>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
